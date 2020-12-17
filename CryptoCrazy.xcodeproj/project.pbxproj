@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B24EC8258B9AB4001CFAF6 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B24EC7258B9AB4001CFAF6 /* CryptoViewModel.swift */; };
 		25BF40FB25881C29000E92E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF40FA25881C29000E92E2 /* AppDelegate.swift */; };
 		25BF40FD25881C29000E92E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF40FC25881C29000E92E2 /* SceneDelegate.swift */; };
 		25BF40FF25881C29000E92E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF40FE25881C29000E92E2 /* ViewController.swift */; };
 		25BF410225881C29000E92E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BF410025881C29000E92E2 /* Main.storyboard */; };
 		25BF410425881C31000E92E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BF410325881C31000E92E2 /* Assets.xcassets */; };
 		25BF410725881C31000E92E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BF410525881C31000E92E2 /* LaunchScreen.storyboard */; };
+		25BF411025881D81000E92E2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF410F25881D81000E92E2 /* CryptoTableViewCell.swift */; };
+		25BF411825882158000E92E2 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF411725882158000E92E2 /* CryptoCurrency.swift */; };
+		25BF411B2588224F000E92E2 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF411A2588224F000E92E2 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25B24EC7258B9AB4001CFAF6 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		25BF40F725881C29000E92E2 /* CryptoCrazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCrazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BF40FA25881C29000E92E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25BF40FC25881C29000E92E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		25BF410325881C31000E92E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25BF410625881C31000E92E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25BF410825881C31000E92E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25BF410F25881D81000E92E2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		25BF411725882158000E92E2 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		25BF411A2588224F000E92E2 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		25BF40F925881C29000E92E2 /* CryptoCrazy */ = {
 			isa = PBXGroup;
 			children = (
-				25BF40FA25881C29000E92E2 /* AppDelegate.swift */,
-				25BF40FC25881C29000E92E2 /* SceneDelegate.swift */,
-				25BF40FE25881C29000E92E2 /* ViewController.swift */,
+				25BF411625882128000E92E2 /* Service */,
+				25BF411525882120000E92E2 /* ViewModel */,
+				25BF41142588211A000E92E2 /* Model */,
+				25BF411325882112000E92E2 /* View */,
 				25BF410025881C29000E92E2 /* Main.storyboard */,
 				25BF410325881C31000E92E2 /* Assets.xcassets */,
 				25BF410525881C31000E92E2 /* LaunchScreen.storyboard */,
 				25BF410825881C31000E92E2 /* Info.plist */,
 			);
 			path = CryptoCrazy;
+			sourceTree = "<group>";
+		};
+		25BF411325882112000E92E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25BF40FA25881C29000E92E2 /* AppDelegate.swift */,
+				25BF40FC25881C29000E92E2 /* SceneDelegate.swift */,
+				25BF40FE25881C29000E92E2 /* ViewController.swift */,
+				25BF410F25881D81000E92E2 /* CryptoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25BF41142588211A000E92E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25BF411725882158000E92E2 /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25BF411525882120000E92E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				25B24EC7258B9AB4001CFAF6 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25BF411625882128000E92E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				25BF411A2588224F000E92E2 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BF411025881D81000E92E2 /* CryptoTableViewCell.swift in Sources */,
 				25BF40FF25881C29000E92E2 /* ViewController.swift in Sources */,
+				25BF411B2588224F000E92E2 /* Webservice.swift in Sources */,
+				25B24EC8258B9AB4001CFAF6 /* CryptoViewModel.swift in Sources */,
 				25BF40FB25881C29000E92E2 /* AppDelegate.swift in Sources */,
+				25BF411825882158000E92E2 /* CryptoCurrency.swift in Sources */,
 				25BF40FD25881C29000E92E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
